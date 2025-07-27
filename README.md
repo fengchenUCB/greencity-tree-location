@@ -12,8 +12,8 @@ For more details, see the [original inspiration repo](https://github.com/jonatha
 ## Docker Image
 We provide a Dockerfile for building a GPU-enabled Docker image based on NVIDIA TensorFlow.
 
-- [Dockerfile](https://github.com/fengchenUCB/greencity-tree-location/blob/master/DockerImage/Dockerfile)
-- [README for Docker](https://github.com/fengchenUCB/greencity-tree-location/blob/master/DockerImage/README.md)
+- [Dockerfile](DockerImage/Dockerfile)
+- [README for Docker](DockerImage/README.md)
 
 ### Build the Docker Image
 ```bash
@@ -30,8 +30,8 @@ docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it
 ## Apptainer Image
 For HPC environments (e.g., Lawrencium cluster), we provide an Apptainer definition file.
 
-- [Apptainer.def](https://github.com/fengchenUCB/greencity-tree-location/blob/master/DockerImage/Apptainer.def)
-- [README for Apptainer](https://github.com/fengchenUCB/greencity-tree-location/blob/master/DockerImage/README_Apptainer.md)
+- [Apptainer.def](DockerImage/Apptainer.def)
+- [README for Apptainer](DockerImage/README_Apptainer.md)
 
 ### Build the Apptainer Image
 ```bash
@@ -65,17 +65,18 @@ bash run_gpu_train_inference-demo.sh
 bash run_gpu_pretrained_inference-demo.sh
 ```
 
-- [run_gpu_train_inference-demo.sh](https://github.com/fengchenUCB/greencity-tree-location/blob/master/run_gpu_train_inference-demo.sh)
-- [run_gpu_pretrained_inference-demo.sh](https://github.com/fengchenUCB/greencity-tree-location/blob/master/run_gpu_pretrained_inference-demo.sh)
+- [run_gpu_train_inference-demo.sh](run_gpu_train_inference-demo.sh)
+- [run_gpu_pretrained_inference-demo.sh](run_gpu_pretrained_inference-demo.sh)
 
 These scripts utilize all available GPUs for faster processing.
 
 ## Pretrained Model Evaluation
 Our pretrained model achieves:
-- Recall: 81.17% (at 12m threshold)
-- Average Distance to Closest Predicted Tree: 4.47 meters
+- Best Recall: 81% (at 12m threshold)
+- Best Average Distance to Closest Predicted Tree: 4.5 meters
 
-- Visualization: [Average Recall vs. Threshold Plot](https://github.com/fengchenUCB/greencity-tree-location/blob/master/viz/average_recall_threshold_plot.png)
-- Data: [Average Recall vs. Threshold CSV](https://github.com/fengchenUCB/greencity-tree-location/blob/master/viz/average_recall_threshold_data.csv)
+- Visualization: [Average Recall vs. Threshold Plot](viz/average_recall_threshold_plot.png)
+  - ![image](viz/average_recall_threshold_plot.png)
+- Data: [Average Recall vs. Threshold CSV](viz/average_recall_threshold_data.csv)
 
 For more on the model's structure (21 layers, ~33.6M parameters) and evaluation, see the scripts in the repo.

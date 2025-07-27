@@ -5,7 +5,6 @@ docker build --no-cache -t greencity-tree-location .
 
 ### to run docker image
 ```
-#docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it greencity-tree-location
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v $HOME:/workspace/data greencity-tree-location
 ```
 

@@ -1,3 +1,8 @@
+### build docker image
+```
+docker build -t greencity-tree-location .
+```
+
 ### to run docker image
 ```
 #docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it greencity-tree-location

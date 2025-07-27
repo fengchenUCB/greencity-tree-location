@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /workspace/greencity-tree-location
+cd /workspace/data/greencity-tree-location
 
 rm -rf ./pasadena_tiles_2048_32_pretrained
 mkdir ./pasadena_tiles_2048_32_pretrained

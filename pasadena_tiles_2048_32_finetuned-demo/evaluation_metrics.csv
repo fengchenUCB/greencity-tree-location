@@ -1,0 +1,9 @@
+Metric,Value
+True Positives (TP),45917
+False Negatives (FN),11153
+False Positives (FP),198416
+Precision,0.1879
+Recall,0.8046
+F1 Score,0.3047
+Average Distance for Matches,4.45 meters
+Average Distance to Closest Predicted Tree,4.83 meters

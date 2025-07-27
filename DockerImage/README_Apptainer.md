@@ -19,5 +19,6 @@ apptainer shell --nv --writable-tmpfs greencity-tree-location.sif
 Once inside the container, navigate to the mounted data directory and run the inference commands:
 
 ```
+cd /workspace/greencity-tree-location
 bash run_gpu_train_inference-demo.sh
 ```

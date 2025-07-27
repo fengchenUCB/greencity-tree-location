@@ -13,5 +13,6 @@ docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it
 #### Train & Inference
 
 ```
+cd /workspace/greencity-tree-location
 bash run_gpu_train_inference-demo.sh
 ```

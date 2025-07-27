@@ -1,6 +1,6 @@
 ### build docker image
 ```
-docker build -t greencity-tree-location .
+docker build --no-cache -t greencity-tree-location .
 ```
 
 ### to run docker image

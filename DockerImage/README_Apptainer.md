@@ -3,13 +3,13 @@
 First, build the Apptainer container (note that building requires root privileges):
 
 ```
-sudo apptainer build greencity-tree-detection.sif Apptainer.def
+sudo apptainer build greencity-tree-location.sif Apptainer.def
 ```
 
 Then, run the container interactively with NVIDIA GPU support and mount your data directory:
 
 ```
-apptainer shell --nv greencity-tree-detection.sif
+apptainer shell --nv --writable-tmpfs greencity-tree-location.sif
 ```
 
 ### Inside the Apptainer container

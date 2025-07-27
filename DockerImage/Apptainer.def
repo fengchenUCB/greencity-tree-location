@@ -6,7 +6,7 @@ From: nvcr.io/nvidia/tensorflow:24.02-tf2-py3
     pip install imageio rasterio geopandas h5py scipy tqdm scikit-image scikit-learn optuna matplotlib
     mkdir -p /workspace
     cd /workspace
-    git clone https://github.com/fengchenUCB/greencity-tree-detection.git
+    git clone https://github.com/fengchenUCB/greencity-tree-location.git
 
 %environment
-    export PYTHONPATH=/workspace/greencity-tree-detection:$PYTHONPATH
+    export PYTHONPATH=/workspace/greencity-tree-location:$PYTHONPATH

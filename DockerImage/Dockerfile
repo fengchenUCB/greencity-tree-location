@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y gdal-bin libgdal-dev
 RUN pip install imageio rasterio geopandas h5py scipy tqdm scikit-image scikit-learn optuna matplotlib
 
 # Clone the repo and copy your scripts
-RUN git clone https://github.com/fengchenUCB/greencity-tree-detection.git
-WORKDIR /workspace/greencity-tree-detection
+RUN git clone https://github.com/fengchenUCB/greencity-tree-location.git
+WORKDIR /workspace/greencity-tree-location
 
 # (optional) Copy your dataset into the image, or mount at runtime
 

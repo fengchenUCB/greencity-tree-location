@@ -36,7 +36,10 @@ docker build -t greencity-tree-location .
 docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it -v $HOME:/workspace/data greencity-tree-location
 ```
 
-(Image also available on Docker Hub: [URL to be provided later].)
+(Image also available on Docker Hub: [https://hub.docker.com/r/fengchenucb/greencity-tree-location](https://hub.docker.com/r/fengchenucb/greencity-tree-location).)
+```
+docker pull fengchenucb/greencity-tree-location
+```
 
 ## Apptainer Image
 For HPC environments (e.g., Lawrencium cluster), we provide an Apptainer definition file.

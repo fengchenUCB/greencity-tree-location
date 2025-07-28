@@ -103,6 +103,7 @@ Our pretrained model achieves:
   - ![image](viz/distance_demo.png)
   - ![image](viz/average_recall_threshold_plot.png)
   - ![image](viz/combined_smoothed_distance_histogram.png)
+  
 - Data: [Average Recall vs. Threshold CSV](viz/average_recall_threshold_data.csv)
 
 For more on the model's structure (21 layers, ~33.6M parameters) and evaluation, see the scripts in the repo.

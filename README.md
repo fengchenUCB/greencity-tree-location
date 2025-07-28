@@ -3,7 +3,7 @@
 This repository implements a VGG-16 based baseline model for urban tree detection, part of the GreenCity capstone project. The model processes high-resolution aerial imagery (e.g., NAIP data at 0.6m/pixel) to predict tree locations via confidence maps and peak finding. It supports training and inference on GPU-enabled environments.
 
 Key features:
-- Modified VGG-16 Fully Convolutional Network (FCN) with ~33.6M parameters.
+- Modified VGG-16 Fully Convolutional Network (FCN) with ~17M parameters.
 - Multi-GPU training support (up to 8 GPUs).
 - Evaluation metrics focused on Recall and Average Distance to Closest Predicted Tree.
 
@@ -106,4 +106,4 @@ Our pretrained model achieves:
   
 - Data: [Average Recall vs. Threshold CSV](viz/average_recall_threshold_data.csv)
 
-For more on the model's structure (21 layers, ~33.6M parameters) and evaluation, see the scripts in the repo.
+For more on the model's structure (21 layers, ~17M parameters) and evaluation, see the scripts in the repo.

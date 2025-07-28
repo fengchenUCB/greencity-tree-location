@@ -9,6 +9,17 @@ Key features:
 
 For more details, see the [original inspiration repo](https://github.com/jonathanventura/urban-tree-detection).
 
+## Data
+- **Pasadena Street Trees Dataset**: ~57,000 street trees with geo locations and other attributes.
+  - Source: [City of Pasadena Open Data](https://data.cityofpasadena.net/datasets/593b88391b614123890f54a1db8fbf55_0/about)
+
+- **Training Images Dataset**: Preprocessed 256x256 RGB tiles from Pasadena NAIP imagery.
+  - Source: [pasadena_data_256_RGB_train_backup/images](pasadena_data_256_RGB_train_backup/images)
+
+- **Inference Demo Input Images**: 2048x2048 tiles with 32-pixel overlap for demonstration.
+  - Source: [pasadena_tiles_2048_32/images](pasadena_tiles_2048_32/images)
+
+
 ## Docker Image
 We provide a Dockerfile for building a GPU-enabled Docker image based on NVIDIA TensorFlow.
 
@@ -69,6 +80,16 @@ bash run_gpu_pretrained_inference-demo.sh
 - [run_gpu_pretrained_inference-demo.sh](run_gpu_pretrained_inference-demo.sh)
 
 These scripts utilize all available GPUs for faster processing.
+
+
+## Pretrained Weights
+Pretrained model weights for VGG-16, fine-tuned on Pasadena data.
+
+- [pasadena_train_weights-demo](pasadena_train_weights-demo)
+
+Place the weights in the appropriate directory (e.g., `./weights/pretrained_rgb`) before running inference demos.
+
+
 
 ## Pretrained Model Evaluation
 Our pretrained model achieves:
